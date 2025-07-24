@@ -201,7 +201,8 @@ padding: 20px;
  color: #ff6600;
  }
  .section-description {
-  font-size: 1.1em;
+  font-size: 1.3rem;
+  font-weight: 400;
  color: #666;
  margin-bottom: 40px;
 line-height: 1.5;
@@ -280,6 +281,7 @@ input{
     font-size: 1rem;
     font-weight: 400;
     color: #00000080;
+    
 }
 .input-text{
     margin-left: 100px;
@@ -289,7 +291,7 @@ input{
     text-align: center;
     font-weight:700 ;
     font-size: 3.1rem;
-   
+    
 }
 .btn-primary{
     width: 186px;
@@ -298,6 +300,22 @@ input{
     color: white;
     border: none;
 }
+/* footer */
+ .last-word{
+    color: #00000080;
+    font-weight: 400;
+    font-size: 1.3rem;
+ }
+ .footer-nav{
+   color: #00000080;
+ }
+ .unorder1{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+ }
 /* Mobile Responsive */
 @media  (max-width: 768px) {
   .navbar {
@@ -391,5 +409,27 @@ input{
  .badge{
    display: none;
  }
+ /* latest deal */
+   .section-title {
+  font-size: 2em;
+   }
+ .section-description {
+ font-size: 1em;
+ margin-bottom: 30px;
+      }      
+ .deals-container {
+  grid-template-columns: 1fr;
+ }    
+ .deal-card {
+ min-height: 180px;
+ padding: 20px;
+ }     
+ .deal-card.zabo-plant {
+ min-height: 250px; 
+ } 
+.deal-card h3 {
+ font-size: 1.5em;
+ margin-bottom: 10px;
+}
     
 }
