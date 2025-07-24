@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* shared style */
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.display-flex{
+    display: flex;
+}
+/* Navbar style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    font-family: inter;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links a {
+    text-decoration: none;
+    font-weight:600 ;
+    font-size: 1rem;
+}
+.list-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.Nature-black{
+    color:#252432 ;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.bg-color{
+    color: #8987A1;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* Banner */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-top: 162px;
+}
+.banner-left{
+   max-width: 570px;
+   max-height: 108px;
+}
+.bg-black{
+    color:#000000 ;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: noto serif; 
+}
+.bg-orange{
+    color: #E95A08;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 65px;
+     font-family: noto serif;
+}
+.banner-right{
+    max-width: 570px;
+    max-height: 355px;
+}
+.banner-description{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color:#00000080 ;
+    margin-top: 16px;
+    font-family: inter;
+    line-height: 27px;
+}
+/* plant section */
+.our-plants{
+    margin-top: 140px;
+}
+.color-style{
+    margin-left: 500px;
+    font-weight: 700;
+    font-size: 3.1rem;
+}
+.org-color{
+    color:#E95A08 ;
+    font-weight: 700;
+    font-size: 3.1rem;
+}
+.plant-description{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color:#00000080 ;
+    margin-top: 16px;
+    font-family: Inter;
+    margin-left: 300px;
+}
+/* plant-Card */
+ .product-grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 20px;
+ max-width: 1200px;
+ padding: 20px;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+ .product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  
+ }
+  .product-card img {
+           max-width: 270px;
+         max-height: 322.95px;
+            display: block;
+        }
+ .product-info {
+ padding: 15px;
+ flex-grow: 1; /* Allows info section to take available space */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ }
+  .product-title {
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+  color: #111111;
+  font-weight: 500;
+        }
+   .product-price {
+ font-size: 1.3rem;
+ color: #111111;
+ font-weight: 700;
+ margin-bottom: 15px;
+        } 
+ .add-to-cart-btn {
+ background-color:#E95A08 ;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ font-size: 1rem;
+ width: 100%;
+ } 
+      /* flower and lovers  */
+.flower-section{
+    position: relative;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 350px;
+}
+.flower-text{
+    margin-left: 100px;
+}
+.img12{
+    height: 500px;
+    width: 480px;
+}
+.plant-tittel{
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+.flower-iteam{
+    gap: 20px;
+    color: #00000080;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.badge{
+   position: absolute;
+   left: 300px;
+  bottom: 350px;
+ 
+}
+/* latest iteam */
+.deals-section {
+ max-width: 1200px;
+ width: 100%;
+ text-align: center;
+padding: 20px;
+
+  }
+
+ .section-title {
+ font-size: 2.5em;
+ margin-bottom: 10px;
+ color: #333;
+  }
+
+ .section-title span.orange {
+ color: #ff6600;
+ }
+ .section-description {
+  font-size: 1.1em;
+ color: #666;
+ margin-bottom: 40px;
+line-height: 1.5;
+ max-width: 700px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+  .deals-container {
+ display: grid;
+ grid-template-columns: 1fr 2fr; /* Two columns: left (1 part), right (2 parts) */
+ gap: 20px;
+ align-items: stretch; /* Ensure items stretch to fill grid area */
+ }
+  .left-deals {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ }
+   .deal-card {
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  color: #fff;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  padding: 30px;
+ text-align: center;
+ background-size: cover;
+ background-position: center
+   }
+   .deal-card h3 {
+ font-size: 1.8em;
+ margin: 0 0 15px;
+ font-weight: bold;
+  }
+   .deal-card .shop-now-btn {
+ background-color: transparent;
+ color: #fff;
+border: 2px solid white;
+ padding: 10px 25px;
+ border-radius: 5px;
+ text-decoration: none;
+ font-size: 1em;
+ transition: background-color 0.3s ease, color 0.3s ease;
+        }
+  .deal-card.bloom-plant {
+            background-image: url('/B12A02-Responsive-Flowers/assets/deal-bloom.png');
+           height: 206px;
+        }
+
+        .deal-card.ana-plant {
+            background-image: url('/B12A02-Responsive-Flowers/assets/deal-ana.png');
+            height: 206px;
+        }
+
+        .deal-card.zabo-plant {
+            background-image: url('/B12A02-Responsive-Flowers/assets/deal-zabo.png');
+            min-height: 420px; /* Adjust height for the larger card */
+        }       
+/* input-field*/
+
+.box17{
+    width: 1440px ;
+    height: 533px;
+    background-image: url(/B12A02-Responsive-Flowers/assets/news-letter-bg.png);
+
+}
+.input-email{
+    margin-left: 150px;
+    margin-top: 300px;
+}
+input{
+ width: 644px ;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #00000080;
+}
+.input-text{
+    margin-left: 100px;
+   color: #FFFFFF;
+}
+.tittel-input{
+    text-align: center;
+    font-weight:700 ;
+    font-size: 3.1rem;
+   
+}
+.btn-primary{
+    width: 186px;
+    height: 50px;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+}
+/* Mobile Responsive */
+@media  (max-width: 768px) {
+  .navbar {
+     max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Logo on left, Cart on right */
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+
+  .logo img {
+    margin-bottom: 10px;
+  }
+  .banner-left{
+  
+    
+  }
+
+  .header-item ul {
+   display: none;
+  }
+
+  .cart-info a {
+    margin-top: 10px;
+     display: flex;
+  align-items: center;
+  gap: 8px;
+  }
+  /* Banner */
+  .banner{
+ flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+     width: 100%;
+  max-width: 1200px;
+}
+ .banner-left,
+  .banner-right {
+    max-width: 100%;
+    height: auto;
+    
+  }
+  /* Flower card */
+    .product-grid {
+     grid-template-columns:repeat(2, 1fr);
+     padding: 15px;
+     margin: 10px;
+     box-shadow: none;
+     flex-wrap: wrap;
+     gap: 50px;
+     
+    }
+
+
+ .product-card {
+    flex-direction: column;
+     margin-bottom: 15px;
+     width: 171px;
+     height: 196.5px;
+     
+ }
+ .product-info{
+  width: 171px;
+  height: 114px;
+ }
+ .add-to-cart-btn{
+    width: 171px;
+    height: 50px;
+    margin-bottom: 90px;
+ }
+ /* flower plant lover */
+ .flower-section{
+    margin-top: 50px;
+    margin-left: 20px;
+    flex-direction: column;       /* stack content vertically */
+    align-items: center;          /* center content horizontally */
+    gap: 20px;             
+ }
+ .img12{
+   width: 90%;
+   height: auto;
+   max-width: none;
+   margin-top: 100px;
+ }
+ .flower-text{
+  margin: 0 auto;
+  font-size: 1.2rem;
+    padding: 0 10px;
+ }
+ .badge{
+   display: none;
+ }
+    
+}
