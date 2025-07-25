@@ -107,7 +107,7 @@
  background-color: #fff;
  border-radius: 8px;
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+ }
  .product-card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -119,10 +119,10 @@
   
  }
   .product-card img {
-           max-width: 270px;
-         max-height: 322.95px;
-            display: block;
-        }
+    max-width: 270px;
+  max-height: 322.95px;
+  display: block;
+ }
  .product-info {
  padding: 15px;
  flex-grow: 1; /* Allows info section to take available space */
@@ -136,13 +136,13 @@
   margin: 10px 0 5px;
   color: #111111;
   font-weight: 500;
-        }
+ }
    .product-price {
  font-size: 1.3rem;
  color: #111111;
  font-weight: 700;
  margin-bottom: 15px;
-        } 
+} 
  .add-to-cart-btn {
  background-color:#E95A08 ;
  color: white;
@@ -151,7 +151,7 @@
  font-size: 1rem;
  width: 100%;
  } 
-      /* flower and lovers  */
+ /* flower and lovers  */
 .flower-section{
     position: relative;
     display: flex;
@@ -266,8 +266,8 @@ border: 2px solid white;
 /* input-field*/
 
 .box17{
-    width: 1440px ;
-    height: 533px;
+   width: 1440px;
+   height: 533px;
     background-image: url(/B12A02-Responsive-Flowers/assets/news-letter-bg.png);
 
 }
@@ -367,7 +367,7 @@ list-style: none;
  text-decoration: none;
  color: #555;
 font-size: 0.95em;
-        }  
+}  
  .footer-social {
  flex: 0 0 auto; 
  display: flex;
@@ -387,9 +387,9 @@ display: flex;
  color: white;
  font-size: 1.2em;
  text-decoration: none;
-        }
+  }
  .social-icon.linkedin { background-color: #0077B5; }
- .social-icon.twitter { background-color: #333; /* Using dark for X */ }
+ .social-icon.twitter { background-color: #333;  }
  .social-icon.facebook { background-color: #1877F2; }
  .social-icon.youtube { background-color: #FF0000; }
                    
@@ -407,10 +407,6 @@ display: flex;
   .logo img {
     margin-bottom: 10px;
   }
-  .banner-left{
-  
-    
-  }
 
   .header-item ul {
    display: none;
@@ -424,19 +420,37 @@ display: flex;
   }
   /* Banner */
   .banner{
+display: flex;
  flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-     width: 100%;
-  max-width: 1200px;
-}
+    gap: 10px;
+  }
+
  .banner-left,
   .banner-right {
     max-width: 100%;
     height: auto;
     
   }
+  .banner-right{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
   /* Flower card */
+   .our-plants {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 60px; 
+    padding: 0 16px;  
+  }
+  .color-style{
+    margin: 0 auto;
+  }
+  .plant-description{
+    text-align: center;
+  margin-left: 3px;
+    line-height: 25px;
+    flex-grow: 0;
+  }
     .product-grid {
      grid-template-columns:repeat(2, 1fr);
      padding: 15px;
@@ -446,8 +460,6 @@ display: flex;
      gap: 50px;
      
     }
-
-
  .product-card {
     flex-direction: column;
      margin-bottom: 15px;
@@ -508,5 +520,57 @@ display: flex;
  font-size: 1.5em;
  margin-bottom: 10px;
 }
+/* footer section */
+ .footer-container {
+ flex-direction: column;
+align-items: center;
+ padding: 30px 15px;
+ }
+
+ .footer-brand,
+.footer-links,
+.footer-social {
+ margin-right: 0;
+  margin-left: 0;
+ width: 100%; 
+ text-align: center;
+ margin-bottom: 30px;
+ }
+
+ .footer-brand p {
+ max-width: 90%; 
+ margin-left: auto;
+ margin-right: auto;
+ }
+
+ .footer-links {
+flex-direction: column; 
+gap: 10px;
+ }
+
+.footer-links ul {
+ flex: none; 
+ width: 100%;
+text-align: center;
+ }
+
+ .footer-social {
+ justify-content: center; 
+ }
+ /* Box content */
+  .box17 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 16px;
+   
+  }
+
+  .input-text,
+  .input-email {
+    width: 50%;
+   font-size: 15px;
+   padding: 10px 12px;
+  }
     
 }
