@@ -337,7 +337,8 @@ align-items: flex-start;
  max-width: 150px; 
  height: auto;
  margin-bottom: 15px;
-        } 
+       
+} 
  .footer-brand p {
   font-size: 0.95em;
  color: #666;
